@@ -1,0 +1,50 @@
+.main-content {
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 24px;
+  max-width: 400px;
+  width: 90%;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.payment-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#service-dropdown,
+#campoAPagar,
+#amount {
+  padding: 10px;
+  border: 1px solid #555555; /* Slightly lighter than the background for contrast */
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+#pay-button {
+  padding: 12px 20px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#validation-message {
+  color: #ff5733;
+  margin-top: 10px;
+}
+
+#back-btn {
+  margin-top: 24px;
+  width: 100%;
+}

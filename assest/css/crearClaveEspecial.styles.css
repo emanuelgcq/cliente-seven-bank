@@ -1,0 +1,32 @@
+form {
+  margin-top: 60px;
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 6px 8px;
+}
+
+.btn {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #ff873d;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  color: #ff873d;
+  background-color: #fff;
+}

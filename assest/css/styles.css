@@ -1,0 +1,935 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --main-color: #2f3f56;
+  --secondary-color: #000000;
+  --accent-color: #ff873d;
+  --text-color: #FFF;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../image/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.custom-main-body {
+  background-color: #2f3f56; /* Cambia este color al que deseas */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el cuadro de mensaje */
+#message-box {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(47, 63, 86, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.logout-menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.logout-menu-container .user-data {
+  margin-right: 16px;
+}
+
+.logout-menu-container .user-data p {
+  font-size: 1.2rem;
+  margin: 2px 0;
+}
+
+.left-image {
+  position: absolute;
+  top: 40%;
+  left: 60px;
+  transform: translateY(-50%);
+  width: 500px;
+}
+
+.right-image {
+  position: absolute;
+  top: 65%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 500px;
+}
+
+a.large-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a.large-btn:hover {
+  background-color: #ff873d;
+  color: white;
+}
+
+/* Estilos para la barra superior */
+.top-bar {
+  background-color: #2f3f56;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Estilos para el título */
+.title {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.title img {
+  vertical-align: middle;
+  width: 150px;
+}
+
+/* Estilos para resaltar la palabra "Bank" */
+.highlight {
+  color: #ff873d;
+}
+
+/* Estilos para los botones "Registro", "Acceso" y "Menú" */
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.large-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.large-btn img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 23px;
+}
+
+.large-btn:hover {
+  background-color: #ff873d;
+  color: white;
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #2f3f56;
+  position: absolute;
+  top: 120px;
+  right: 30px;
+  padding: 10px;
+  width: 150px;
+  z-index: 1;
+}
+
+.menu-item {
+  padding: 5px 0;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #ff873d;
+}
+
+/* Estilos para mostrar el menú cuando se activa la clase "show-menu" */
+.show-menu {
+  display: flex;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 30px;
+  left: 45px;
+  width: 35%;
+  background-color: #ff873d;
+  padding: 65px;
+  text-align: center;
+}
+
+.highlight-text {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+/* Estilos para la página de inicio de sesión */
+
+.login-background {
+  margin: 0;
+  padding: 0;
+  background-image: url("../image/fondo2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 170px;
+}
+
+.login-container h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: -700px;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+#login-btn {
+  background-color: #ff873d;
+  border-color: #ff873d;
+}
+
+#login-btn:hover {
+  background-color: #ff6c00;
+  border-color: #ff6c00;
+}
+
+/* Estilos para el enlace "¿Olvidaste o bloqueaste tu contraseña?" */
+.login-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff873d6e;
+  color: black; /* Cambia el color del texto a negro */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.login-container a:hover {
+  background-color: #ff6a00b0;
+}
+
+/* REGISTER Estilos para la pagina de registro y crear cuenta*/
+/*fondo*/
+
+.register-background {
+  margin: 0;
+  padding: 0;
+  background-image: url("../image/fondo2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.register-titles {
+  margin-top: 40px;
+  margin-left: 250px;
+}
+
+.register-container {
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 180px;
+  width: 400px;
+}
+
+/*para el formulario*/
+
+.register-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 450px;
+  margin-top: 3px;
+}
+
+.form1_label {
+  display: block;
+  margin-bottom: 2px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.form1-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.group-form1-input {
+  position: relative;
+}
+
+/*estilo del mensaje chiquito para no dejar campos vacios*/
+
+.form1-input-error {
+  font-size: 15px;
+  margin-bottom: 5;
+  display: none;
+  text-align: left;
+}
+
+/*bloquear el mensaje para que aparesca solo cuando se llame*/
+
+.form1-input-error-activo {
+  display: block;
+}
+
+/*dibujito del validar palomita*/
+
+.form1-valid {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+/*estilo del mensaje:rellena....*/
+.form1-message {
+  height: 45px;
+  line-height: 45px;
+  background: #f08888;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.form1-message-activo {
+  display: block;
+}
+
+.form1-message p {
+  margin: 0;
+}
+
+/*botones inferiores de registrar y cancelar*/
+
+#register-btn {
+  margin-top: 20px;
+  background-color: #ff873d;
+  border-color: #ff873d;
+}
+
+#register-btn:hover {
+  background-color: #ff6c00;
+  border-color: #ff6c00;
+}
+
+#cancel-btn {
+  margin-top: 20px;
+  background-color: #ff873d;
+  border-color: #ff873d;
+}
+
+#cancel-btn:hover {
+  background-color: #ff6c00;
+  border-color: #ff6c00;
+}
+
+/*estilos para validacion*/
+
+.group-form1-correct .form1-valid {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.group-form1-correct .form1-input {
+  border: 3px solid #1ed12d;
+}
+
+.group-form1-incorrect .form1-valid {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.group-form1-incorrect .form1-input {
+  border: 3px solid #bb2929;
+}
+
+.register-notification {
+  position: absolute;
+  bottom: 20px;
+  left: 800px;
+  width: 25%;
+  background-color: #ff873d;
+  padding: 65px;
+  text-align: center;
+}
+
+.highlight-text {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+/* Estilos para la nueva barra naranja rectangular */
+
+.vertical-orange-bar {
+  background-color: #ff873d;
+  width: 300px;
+  height: 150%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-icon {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: -850px;
+}
+
+/* Estilos para los nuevos botones en la barra vertical */
+.vertical-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 65px;
+}
+
+.vertical-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 180px;
+  margin: 5px auto;
+}
+
+.vertical-btn:hover {
+  background-color: #ff873d;
+  color: white;
+  border-color: white;
+}
+
+/* Estilos para el botón de cerrar sesión */
+.logout-button {
+  position: fixed;
+  bottom: 20px;
+  right: 65px;
+  z-index: 1;
+}
+
+#logout-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #ff873d;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#logout-btn:hover {
+  background-color: #2f3f56;
+  border-color: #2f3f56;
+}
+
+/* Mostrar las opciones secundarias al hacer hover sobre el botón */
+.horizontal-options:hover .sub-options {
+  display: flex;
+  top: 50px;
+}
+
+.horizontal-orange-bar {
+  background-color: #ff873d;
+  height: 70px;
+  width: 80%;
+  position: absolute;
+  top: 180px;
+  left: 0;
+}
+
+/* Estilos para la barra horizontal */
+.horizontal-orange-bar {
+  background-color: #ff873d;
+  height: 70px;
+  width: 78%;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Estilos para los botones de opciones horizontales */
+.horizontal-btn {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ff873d;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.horizontal-btn:hover {
+  background-color: #ff873d;
+  color: white;
+}
+
+/* Estilos para las opciones secundarias */
+.sub-options {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #e06f28;
+  width: 250px;
+  padding: 8px 12px;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.sub-options a {
+  color: white;
+  font-size: 23px;
+  padding: 8px 0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sub-options a:hover {
+  color: #2f3f56;
+}
+
+.horizontal-icon {
+  width: 35px;
+  margin-left: 8px;
+}
+
+.user-text1 {
+  position: absolute;
+  bottom: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 23px;
+  color: white;
+  text-align: center;
+}
+
+/* Estilos para html movimientos de cuentas */
+
+.logout-button-sup {
+  position: fixed;
+  top: 20px;
+  right: 65px;
+  z-index: 1;
+}
+
+#logout-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #ff873d;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#logout-btn:hover {
+  background-color: #2f3f56;
+  border-color: #2f3f56;
+}
+
+/* Estilos para el botón "Menú Principal" y "Cerrar Sesión" en la esquina superior izquierda */
+.menu-p-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+#menu-p-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #2f3f56;
+  color: #ffffff;
+  border: 2px solid #2f3f56;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#menu-p-btn:hover {
+  background-color: #2f3f56;
+  border-color: #ffffff;
+}
+
+.user-icon-white {
+  width: 100px;
+  height: auto;
+  top: 6%;
+  right: 300px;
+  z-index: 1;
+}
+
+.divider {
+  width: 2px;
+  height: 50px;
+  background-color: white;
+  margin: 10px 10px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+}
+
+.consultation-title {
+  text-align: left;
+  padding-top: 70px;
+  padding-left: 20px;
+  color: #ffffff;
+  border-bottom: 2px solid #ff873d;
+}
+
+.consultation-title h1 {
+  color: white;
+  font-size: 30px;
+}
+/*estilos para registerUser*/
+/*ESTILOS DEL REGISTERUSER para el formulario de crear usuario y contrseña*/
+
+.registerUser-background {
+  margin: 0;
+  padding: 0;
+  background-image: url("../image/fondo2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.registerUser-titles {
+  margin-top: 40px;
+  margin-left: 200px;
+}
+
+.registerUser-container {
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 180px;
+  width: 400px;
+}
+
+.registerUser-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 430px;
+  margin-top: 2px;
+}
+
+/*estilo de la etiqueta*/
+
+.form_label {
+  display: block;
+  margin-bottom: 6px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/*estilos de las cajitas input*/
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.group-form-input {
+  position: relative;
+}
+
+/*estilo del mensaje de error y condiciones como debe crear cont*/
+
+.form-input-error {
+  font-size: 12px;
+  margin-bottom: 2;
+  display: none;
+  text-align: left;
+}
+
+/*bloquear el mensaje para que aparesca solo cuando se llame*/
+
+.form-input-error-activo {
+  display: block;
+}
+
+/*validar*/
+
+.form-valid {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+/*estilo del mensaje:rellena....*/
+.form-message {
+  height: 45px;
+  line-height: 45px;
+  background: #f08888;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.form-message-activo {
+  display: block;
+}
+
+.form-message p {
+  margin: 0;
+}
+
+/*estilo botones de crear cuenta y cancelar*/
+
+#form-btn {
+  margin-top: 20px;
+  background-color: #ff873d;
+  border-color: #ff873d;
+}
+
+#form-btn:hover {
+  background-color: #ff6c00;
+  border-color: #ff6c00;
+}
+
+#form-canc-btn {
+  margin-top: 20px;
+  background-color: #ff873d;
+  border-color: #ff873d;
+}
+
+#form-canc-btn:hover {
+  background-color: #ff6c00;
+  border-color: #ff6c00;
+}
+
+/*mensaje exitosamente*/
+
+.form-message-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.form-message-exito-activo {
+  display: block;
+}
+
+/*estilos para validacion*/
+
+.group-form-correct .form-valid {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.group-form-incorrect .form-valid {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.group-form-incorrect .form-input {
+  border: 3px solid #bb2929;
+}
+
+/*Estilos para accountStatus*/
+
+.center-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para el selector de mes */
+.month-chooser {
+  margin-bottom: 20px;
+}
+
+.month-chooser label {
+  font-size: 23px;
+  color: white;
+}
+
+.month-chooser select {
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* Estilos para el botón Generar */
+.generate-button {
+  background-color: #ff873d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+  background-color: #2f3f56;
+}
+
+/* Estilos para el icono de PDF */
+.pdf-icon img {
+  width: 80px;
+  margin-top: 10px;
+}
+
+/* Estilos para los botones Descargar e Imprimir */
+.download-button,
+.print-button {
+  background-color: #ff873d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.download-button:hover,
+.print-button:hover {
+  background-color: #2f3f56;
+}
+
+/* Estilos para la selección de cuenta */
+.select-account {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.select-account p {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.select-account select {
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* Estilos para el formulario de solicitud */
+.request-form {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.request-form label {
+  font-size: 18px;
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.request-form textarea {
+  width: 100%;
+  max-width: 500px;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #ff873d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #2f3f56;
+}

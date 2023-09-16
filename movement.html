@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven Bank - Cuenta Principal</title>
+    <link rel="stylesheet" href="assest/css/styles.css" />
+    <link rel="stylesheet" href="assest/css/responsive.css" />
+    <link rel="stylesheet" href="assest/css/movement.styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assest/js/setup.js"></script>
+  </head>
+  <body
+    style="background-image: none"
+    class="main-account-background custom-main-body"
+  >
+    <div class="top-bar">
+      <div class="title">
+        <img
+          class="icon"
+          src="assest/image/globoCuadriculas.png"
+          alt="Icono de Seven Bank"
+        />Seven <span class="highlight">Bank</span>
+      </div>
+      <div class="logout-menu-container">
+        <div class="user-data">
+          <p id="menu-username"></p>
+          <p id="menu-balance"></p>
+        </div>
+        <img
+          class="user-icon-white"
+          src="assest/image/iconoUsuarioBlanco.png"
+          alt="Icono Usuario"
+        />
+        <button class="large-btn-sup" id="menu-p-btn">
+          Menú <br />
+          Principal
+        </button>
+        <div class="divider"></div>
+        <button class="large-btn-sup" id="logout-btn">
+          Cerrar <br />
+          sesión
+        </button>
+      </div>
+    </div>
+
+    <div class="horizontal-orange-bar">
+      <!-- Barra horizontal con botones y opciones -->
+      <div class="horizontal-options">
+        <button class="horizontal-btn" id="consolidated-options">
+          <u> Posición Consolidada </u>
+          <img
+            class="horizontal-icon"
+            src="assest/image/apuntadorAbajo.png"
+            alt="Icono de boton main"
+          />
+        </button>
+        <div class="sub-options">
+          <a href="movement.html"> Movimiento</a>
+          <a href="accountStatus.html"> Estado de Cuenta</a>
+        </div>
+      </div>
+
+      <div class="horizontal-options">
+        <button class="horizontal-btn" id="consolidated-options">
+          <u> Transacciones </u>
+          <img
+            class="horizontal-icon"
+            src="assest/image/apuntadorAbajo.png"
+            alt="Icono de boton main"
+          />
+        </button>
+        <div class="sub-options">
+          <a href="transfer.html"> Transferencia</a>
+          <a href="pay-services.html"> Pagos de Servicios</a>
+        </div>
+      </div>
+
+      <div class="horizontal-options">
+        <button class="horizontal-btn" id="consolidated-options">
+          <u> Tarjeta </u>
+          <img
+            class="horizontal-icon"
+            src="assest/image/apuntadorAbajo.png"
+            alt="Icono de boton main"
+          />
+        </button>
+        <div class="sub-options">
+          <a href="cardApplication.html"> Solicitud</a>
+          <a href="tdcInquiry.html"> Consulta de Tarjeta</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <h1 class="consultation-title">Consulta de movimientos</h1>
+      <form class="search-form">
+        <label>
+          <input
+            type="radio"
+            name="search-option"
+            value="last-movements"
+            checked
+          />
+          Últimos movimientos
+        </label>
+        <label>
+          <input type="radio" name="search-option" value="date-range" /> Por
+          rango
+        </label>
+        <button type="submit" id="submit-button">Buscar</button>
+        <br />
+        <br />
+        <label for="from-date">Desde:</label>
+        <input type="date" id="from-date" name="from-date" />
+        <div class="date-container">
+          <label for="to-date">Hasta:</label>
+          <input type="date" id="to-date" name="to-date" />
+        </div>
+        <br />
+        <br />
+      </form>
+
+      <table id="movements-list-container">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Id de la transaccion</th>
+            <th>Cuenta/Tarjeta Id</th>
+            <th>Descripción</th>
+            <th>Debito/Credito</th>
+            <th>Monto</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div id="message-box"></div>
+    <script src="assest/js/movement.js"></script>
+    <script src="assest/js/loadAccountDetails.js"></script>
+    <script src="assest/js/common.js"></script>
+  </body>
+</html>

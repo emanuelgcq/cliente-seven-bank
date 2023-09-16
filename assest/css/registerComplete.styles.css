@@ -1,0 +1,37 @@
+.registerComplete .content {
+  margin-left: 200px;
+  margin-top: 20px;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.registerComplete .content .titulo {
+  font-size: 1.2rem;
+}
+
+.registerComplete .content .nro-cuenta {
+  font-size: 1.5rem;
+  margin-top: 16px;
+  width: fit-content;
+  padding: 2px 8px;
+  border: 1px solid black;
+}
+
+.registerComplete .content .btn {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #ff873d;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.registerComplete .content .btn:hover {
+  color: #ff873d;
+  background-color: #fff;
+}

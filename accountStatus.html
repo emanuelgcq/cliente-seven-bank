@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven Bank - Cuenta Principal</title>
+    <link rel="stylesheet" href="assest/css/styles.css" />
+    <link rel="stylesheet" href="assest/css/accountStatus.styles.css" />
+    <link rel="stylesheet" href="assest/css/responsive.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assest/js/setup.js"></script>
+  </head>
+  <body
+    style="background-image: none"
+    class="main-account-background custom-main-body"
+  >
+    <div class="top-bar">
+      <div class="title">
+        <img
+          class="icon"
+          src="assest/image/globoCuadriculas.png"
+          alt="Icono de Seven Bank"
+        />Seven <span class="highlight">Bank</span>
+      </div>
+      <div class="logout-menu-container">
+        <div class="user-data">
+          <p id="menu-username"></p>
+          <p id="menu-balance"></p>
+        </div>
+        <img
+          class="user-icon-white"
+          src="assest/image/iconoUsuarioBlanco.png"
+          alt="Icono Usuario"
+        />
+        <button class="large-btn-sup" id="menu-p-btn">
+          Menú <br />
+          Principal
+        </button>
+        <div class="divider"></div>
+        <button class="large-btn-sup" id="logout-btn">
+          Cerrar <br />
+          sesión
+        </button>
+      </div>
+    </div>
+
+    <div class="horizontal-orange-bar">
+      <!-- Barra horizontal con botones y opciones -->
+      <div class="horizontal-options">
+        <button class="horizontal-btn" id="consolidated-options">
+          <u> Posición Consolidada </u>
+          <img
+            class="horizontal-icon"
+            src="assest/image/apuntadorAbajo.png"
+            alt="Icono de boton main"
+          />
+        </button>
+        <div class="sub-options">
+          <a href="movement.html"> Movimiento</a>
+          <a href="accountStatus.html"> Estado de Cuenta</a>
+        </div>
+      </div>
+
+      <div class="horizontal-options">
+        <button class="horizontal-btn" id="consolidated-options">
+          <u> Transacciones </u>
+          <img
+            class="horizontal-icon"
+            src="assest/image/apuntadorAbajo.png"
+            alt="Icono de boton main"
+          />
+        </button>
+        <div class="sub-options">
+          <a href="transfer.html"> Transferencia</a>
+          <a href="pay-services.html"> Pagos de Servicios</a>
+        </div>
+      </div>
+
+      <div class="horizontal-options">
+        <button class="horizontal-btn" id="consolidated-options">
+          <u> Tarjeta </u>
+          <img
+            class="horizontal-icon"
+            src="assest/image/apuntadorAbajo.png"
+            alt="Icono de boton main"
+          />
+        </button>
+        <div class="sub-options">
+          <a href="cardApplication.html"> Solicitud</a>
+          <a href="tdcInquiry.html"> Consulta de Tarjeta</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <h1 class="consultation-title">Generar Estado de Cuenta</h1>
+      <div class="center-horizontal">
+        <div class="month-chooser">
+          <label for="month-select">Seleccionar Mes:</label>
+          <select id="month-select" name="month-select">
+            <option value="00">Seleccione</option>
+            <option value="01">Enero</option>
+            <option value="02">Febrero</option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Maro</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Agosto</option>
+            <option value="09">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select>
+        </div>
+
+        <div class="pdf-icon">
+          <img src="assest/image/pdf.png" alt="Calendario" />
+        </div>
+
+        <div class="download-print-buttons">
+          <button class="download-button" id="download-button">
+            Descargar
+          </button>
+          <button class="print-button" id="print-button">Imprimir</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="message-box"></div>
+    <script src="assest/js/accountStatus.js"></script>
+    <script src="assest/js/loadAccountDetails.js"></script>
+    <script src="assest/js/common.js"></script>
+  </body>
+</html>

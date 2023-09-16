@@ -1,0 +1,64 @@
+.transfer-form {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transfer-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #f1f1f1; /* Light color for better contrast */
+}
+
+.transfer-form input,
+.transfer-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #444;
+  color: #f1f1f1;
+}
+
+.transfer-form input[type="number"] {
+  width: 100%;
+}
+
+.transfer-form textarea {
+  resize: vertical;
+}
+
+#transfer-button {
+  background-color: var(--accent-color);
+  color: white;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 1.2rem;
+}
+
+/* Style for the dropdown */
+#transaction-type,
+#tarjeta,
+#banco {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555555; /* Slightly lighter than the background for contrast */
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 16px 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven Bank - Registro</title>
+    <link rel="stylesheet" href="assest/css/styles.css" />
+    <link rel="stylesheet" href="assest/css/responsive.css" />
+    <link rel="stylesheet" href="assest/css/crearClaveEspecial.styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assest/js/setup.js"></script>
+  </head>
+  <body class="registerUser-background registerComplete">
+    <div class="top-bar">
+      <div class="title">
+        <img
+          class="icon"
+          src="assest/image/globoCuadriculas.png"
+          alt="Icono de Seven Bank"
+        />Seven <span class="highlight">Bank</span>
+      </div>
+      <div class="buttons">
+        <a href="index.html" class="large-btn" id="menu-btn">
+          <img src="assest/image/iconoInicio.png" alt="Icono Inicio" />
+          <u>Inicio</u>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <form id="clave-form">
+        <label for="clave-especial">Introduce tu clave especial:</label>
+        <input
+          type="password"
+          id="clave-especial"
+          name="clave-especial"
+          required
+        />
+        <button class="btn" id="crear-clave-especial">
+          Crear clave especial
+        </button>
+      </form>
+    </div>
+    <script src="assest/js/crearClaveEspecial.js"></script>
+  </body>
+</html>

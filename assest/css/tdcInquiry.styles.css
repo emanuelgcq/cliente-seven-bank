@@ -1,0 +1,110 @@
+/*Estilos para tdcInquiry*/
+
+/* Main content area */
+.main-content {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.tdc-inquiry-section {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.tdc-inquiry-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.tdc-inquiry-section select {
+  font-size: 16px;
+  padding: 8px 5px;
+}
+
+.generate-button {
+  margin-left: 16px;
+  background-color: #ff873d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+  background-color: #2f3f56;
+}
+
+.tdc-results {
+  margin-top: 20px;
+  /* Estilos para los resultados de la consulta */
+}
+
+/* Style the table */
+.tdc-results {
+  width: 70%;
+  border-collapse: collapse;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 40px auto;
+  border: 1px solid var(--accent-color);
+}
+
+/* Style the table header */
+.tdc-results th {
+  padding: 12px 15px;
+  border: 1px solid var(--accent-color);
+  text-align: left;
+}
+
+/* Style alternating rows for better readability */
+.tdc-results tr:nth-child(even) {
+  background-color: var(--main-color);
+}
+
+.tdc-results tr:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+/* Style table cells */
+.tdc-results td {
+  padding: 10px;
+}
+
+/* Style links within the table */
+.tdc-results a {
+  color: #0099cc;
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+.tdc-results a:hover {
+  text-decoration: underline;
+}
+
+.saldo-section {
+  margin: 0 auto;
+  color: #fff;
+  width: fit-content;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.saldo-section #card-balance {
+  margin-left: 16px;
+  background-color: #fff;
+  color: var(--secondary-color);
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 12px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Bank - Iniciar Sesión</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="assest/css/styles.css">
+    <link rel="stylesheet" href="assest/css/responsive.css">
+</head>
+<body class="login-background">        
+    <div class="top-bar">
+        <div class="title">
+            <img class="icon" src="assest/image/globoCuadriculas.png" alt="Icono de Seven Bank">Seven <span class="highlight">Bank</span>
+        </div>
+        <div class="buttons">
+            <a href="index.html" class="large-btn" id="menu-btn">
+                <img src="assest/image/iconoInicio.png" alt="Icono Inicio"> <u>Inicio</u>
+            </a>
+        </div>
+    </div>
+    
+    <div class="login-container">
+        <h2>Bienvenido</h2>
+        <form class="login-form" id="login-form">
+            <label for="ident">Cedula/DNI</label>
+            <input type="text" id="ident" name="ident" required>
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+            
+            <p><a href="#" >¿Olvidaste tu contraseña?</a></p> <!--Aqui falta colocar en donde esta # el enlace para el html olvidaste o bloqueaste la clave o se quita por si no se va a hacer-->
+
+            <button class="large-btn" id="login-btn"> <u>Iniciar Sesión</u> </button>
+        </form>
+    </div>
+    
+    <script src="assest/js/login.js"></script>
+</body>
+</html>

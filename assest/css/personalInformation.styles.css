@@ -1,0 +1,32 @@
+.main-content {
+  margin: 0 auto;
+  width: 80%;
+  color: #fff;
+}
+
+#personal-info-container h1,
+#personal-info-container h2 {
+  color: var(--accent-color);
+}
+
+#personal-info-container h2 {
+  margin-top: 20px;
+}
+
+#personal-info-container p {
+  margin-bottom: 10px;
+}
+
+#personal-info-container .main-content {
+  padding: 20px;
+}
+
+#personal-info-container .top-bar,
+#personal-info-container .horizontal-orange-bar {
+  background-color: #333;
+}
+
+#personal-info-container .horizontal-options,
+#personal-info-container .sub-options a {
+  color: #bb86fc;
+}

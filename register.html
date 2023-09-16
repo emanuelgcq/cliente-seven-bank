@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Bank - Registro</title>
+    <link rel="stylesheet" href="assest/css/styles.css">
+    <link rel="stylesheet" href="assest/css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="register-background">
+    <div class="top-bar">
+        <div class="title">
+            <img class="icon" src="assest/image/globoCuadriculas.png" alt="Icono de Seven Bank">Seven <span class="highlight">Bank</span>
+        </div>
+        <div class="buttons">
+            <a href="index.html" class="large-btn" id="menu-btn">
+                <img src="assest/image/iconoInicio.png" alt="Icono Inicio"> <u>Inicio</u>
+            </a>
+        </div>
+    </div>
+    <div class="register-titles">
+        <h1>¡Regístrate en Seven Bank!</h1>
+        <h3>Ingresa los siguientes datos para registrarte</h3>
+    </div>
+    <div class="register-container">
+        <form action="" class="register-form" id="register-form">
+
+            <div class="group-form1" id="group-name">
+                <label for="name" class="form1_label">Nombres</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="name" name="name" placeholder="Ej: Jose Jesus">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Este campo es obligatorio</p>
+            </div>
+            
+            <div class="group-form1" id="group-lastname">
+                <label for="lastname" class="form1_label">Apellidos</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="lastname" name="lastname" placeholder="Ej: Jimenez">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Este campo es obligatorio</p>
+            </div>
+            
+            <div class="group-form1" id="group-ident">
+                <label for="ident" class="form1_label">Cedula</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="ident" name="ident" placeholder="Ej 12941538">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Ingresa tu numero de cedula sin punto, sin guiones, sin letras</p>
+            </div>
+
+            <div class="group-form1" id="group-phone">
+                <label for="phone" class="form1_label">Telefono</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="phone" name="phone" placeholder="04125558775">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Ingresa tu numero de telefono sin guiones</p>
+            </div>
+
+            <div class="group-form1" id="group-mail">
+                <label for="mail" class="form1_label">Correo</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="mail" name="mail" placeholder="ejemplo@gmail.com">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Ingresa tu correo incluyendo @ y .com </p>
+            </div>
+
+            <div class="group-form1" id="group-country">
+                <label for="country" class="form1_label">Pais</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="country" name="country">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Este campo es opcional</p>
+            </div>
+            
+            <div class="form1-message" id="form1-message">
+				<p><i class="fas fa-exclamation-triangle"></i>Rellena todos los campos correctamente.</p>
+			</div>
+
+            <div class="buttons-down">
+
+                <div class="group-form1 group-form1-btn">
+                    <button type="submit" class="large-btn" id="register-btn">Registrarme</button>
+                    <button class="large-btn" id="cancel-btn">Cancelar</button>
+                </div>
+
+            </div>
+            <div class="register-notification">
+                <img class="icon" src="assest/image/campana.png">
+                <p class="highlight-text">
+                    <strong>Para registrarte debes tener:</strong><br>
+                    Telefono celular ACTIVO.
+                </p>
+            </div>
+        </form>
+    </div>
+    <script src="assest/js/register.js"></script>
+</body>

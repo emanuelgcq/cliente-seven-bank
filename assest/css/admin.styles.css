@@ -1,0 +1,45 @@
+.main-content {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#accounts-list-container {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 20px auto;
+  border: 1px solid var(--accent-color);
+}
+
+/* Table headers */
+#accounts-list-container th {
+  padding: 12px 15px;
+  border: 1px solid var(--accent-color);
+  text-align: left;
+  font-weight: bold;
+}
+
+#accounts-list-container tr:nth-child(even) {
+  background-color: var(--main-color);
+}
+
+#accounts-list-container tr:last-child {
+  border-bottom: none;
+}
+
+/* Table cells */
+#accounts-list-container td {
+  padding: 12px 15px;
+}
+
+/* Hover effect for rows */
+#accounts-list-container tr:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+.date-container {
+  display: inline-block;
+  margin-left: 20px;
+}

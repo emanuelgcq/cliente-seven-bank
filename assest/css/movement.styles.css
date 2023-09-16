@@ -1,0 +1,84 @@
+.main-content {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#movements-list-container {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 20px auto;
+  border: 1px solid var(--accent-color);
+}
+
+/* Table headers */
+#movements-list-container th {
+  padding: 12px 15px;
+  border: 1px solid var(--accent-color);
+  text-align: left;
+  font-weight: bold;
+}
+
+#movements-list-container tr:nth-child(even) {
+  background-color: var(--main-color);
+}
+
+#movements-list-container tr:last-child {
+  border-bottom: none;
+}
+
+/* Table cells */
+#movements-list-container td {
+  padding: 12px 15px;
+}
+
+/* Hover effect for rows */
+#movements-list-container tr:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+/* Estilos para el formulario y la consulta de movimientos */
+
+.search-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-form label {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.search-form input[type="radio"] {
+  vertical-align: middle;
+}
+
+.search-form input[type="date"] {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.search-form button[type="submit"] {
+  background-color: #ff873d;
+  color: white;
+  border: 2px solid #ff873d;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.search-form button[type="submit"]:hover {
+  background-color: #2f3f56;
+  border-color: #2f3f56;
+}
+
+.date-container {
+  display: inline-block;
+  margin-left: 20px;
+}
