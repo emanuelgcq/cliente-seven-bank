@@ -8,6 +8,7 @@
   padding: 60px 80px;
   top: 28vh;
   right: 200px;
+  z-index: -1;
 }
 
 .main-content .wrapper {
