@@ -1,5 +1,5 @@
-// BASE_URL = "http://localhost:3001"
 BASE_URL = "https://servidor-seven-bank.onrender.com";
+// BASE_URL = "http://localhost:3001";
 
 axiosInstance = axios.create({
   baseURL: BASE_URL,

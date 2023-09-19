@@ -10,8 +10,8 @@ const identInput = document.getElementById("ident");
 const passwordInput = document.getElementById("password");
 
 // Agregar evento al botón de inicio de sesión para mostrar un mensaje si los campos están vacíos
-loginBtn.addEventListener("click", async (e) => {
-  e.preventDefault();
+loginBtn.addEventListener("click", async (event) => {
+  event.preventDefault();
   try {
     const response = await axios.post(`${BASE_URL}/login`, {
       cedula: identInput.value,
